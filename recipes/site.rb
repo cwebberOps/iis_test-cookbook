@@ -7,6 +7,7 @@
 # 
 #
 include_recipe 'windows'
+include_recipe 'iis'
 
 # stop and delete the default site
 iis_site 'Default Web Site' do
