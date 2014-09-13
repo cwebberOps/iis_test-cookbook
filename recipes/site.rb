@@ -20,6 +20,7 @@ iis_site 'Testfu Site' do
   protocol :http
   port 80
   path "#{node['iis']['docroot']}/testfu"
-  action [:add,:start]
+  site_id 10
+  action [:add,:config,:start]
 end
 
